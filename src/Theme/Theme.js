@@ -39,6 +39,19 @@ const Theme = extendTheme({
       50: "#F9F9F9",
       100: "#141414",
     },
+
+    SeconadryColor: {
+      50: "#fffff8",
+      100: "#fffeeb",
+      200: "#fffde1",
+      300: "#fefcd3",
+      400: "#fefcca",
+      500: "#fefbbd",
+      600: "#e7e4ac",
+      700: "#b4b286",
+      800: "#8c8a68",
+      900: "#6b694f",
+    },
   },
 
   fonts: {
