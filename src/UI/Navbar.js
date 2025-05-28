@@ -25,7 +25,7 @@ const NavLink = ({ children }) => (
     rounded={"md"}
     _hover={{
       textDecoration: "none",
-      bg: useColorModeValue("PrimaryColor.400", "gray.900"),
+      bg: useColorModeValue("TextColor.50", "gray.500"),
     }}
     href={"#"}
   >
@@ -88,12 +88,12 @@ export default function NavMenu() {
                 to="/"
                 _activeLink={{
                   bg: "PrimaryColor.400",
-                  color: "gray.900",
+                  color: "TextColor.800",
                   fontWeight: "medium",
                 }}
                 _hover={{
                   textDecoration: "none",
-                  bg: useColorModeValue("PrimaryColor.400", "gray.900"),
+                  bg: useColorModeValue("TextColor.50", "gray.500"),
                 }}
                 px={2}
                 py={1}
