@@ -26,7 +26,7 @@ function Hero() {
 
   return (
     <Box
-      height="130vh"
+      height={["130vh"]}
       backgroundImage={`url(${bgSplash})`}
       backgroundSize="cover"
       backgroundPosition="center"
@@ -35,7 +35,7 @@ function Hero() {
       <Box
         textAlign="center"
         backgroundColor="BgColor.50"
-        width="300px"
+        width={["230px", "300px", "300px"]}
         mx="auto"
         mt="80px"
         borderRadius="50px"
@@ -48,15 +48,16 @@ function Hero() {
       </Box>
 
       <Heading
-        pb="24px"
+        pb="130px"
         color="TextColor.600"
         textAlign="center"
         fontSize={["2xl", "3xl", "5xl"]}
         fontWeight="semibold"
+        height={["120px", "0px", "0px"]}
       >
         <TypingTextRotator
           texts={["Monthly", "Quarterly", "Annually"]}
-          fontSize="5xl"
+          fontSize={["2xl", "3xl", "5xl"]}
           fontWeight="semibold"
           color="PrimaryColor.600"
           textAlign="center"
@@ -68,7 +69,13 @@ function Hero() {
         </Text>
       </Heading>
 
-      <Text textAlign="center" fontSize="18px" color="TextColor.400">
+      <Text
+        textAlign="center"
+        fontSize={["14px", "16px", "18px"]}
+        color="TextColor.400"
+        width={["250px", "100%", "100%"]}
+        mx="auto"
+      >
         Rent an apartment, share, or rent a space you own <br />
         and make extra cash at ease.
       </Text>
@@ -77,15 +84,17 @@ function Hero() {
         <Input
           placeholder="Enter your email"
           focusBorderColor="bgColor.100"
-          width="400px"
-          p={8}
-          mr="10px"
+          width={["300px", "300px", "400px"]}
+          p={[6, 8, 8]}
+          mr={["0", "10px", "10px"]}
           backgroundColor="NeutralColor.0"
+          mb={[4, 0, 0]}
         />
         <Button
           backgroundColor="PrimaryColor.500"
           color="NeutralColor.0"
-          p={8}
+          p={[6, 6, 8]}
+          width={["300px", "150px", "150px"]}
           _hover={{
             textDecoration: "none",
             bg: useColorModeValue("PrimaryColor.800", "NeutralColor.100"),
@@ -101,7 +110,11 @@ function Hero() {
         mt="72px"
         animation={bounceAnimation}
       >
-        <img src={TenantlyMobile} alt="TenantlyMobile" width="900px" />
+        <img
+          src={TenantlyMobile}
+          alt="TenantlyMobile"
+          width={["900px", "900px", "100%"]}
+        />
       </Flex>
     </Box>
   );

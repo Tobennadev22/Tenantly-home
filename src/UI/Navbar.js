@@ -1,6 +1,6 @@
 import { Link as ReactRouterLink } from "react-router-dom";
 import { Link as ChakraLink } from "@chakra-ui/react";
-import { Link as ScrollLink } from "react-scroll";
+// import { Link as ScrollLink } from "react-scroll";
 import Logo from "../Assets/img/logo.png";
 
 import {
@@ -155,6 +155,7 @@ export default function NavMenu() {
             <Stack as={"nav"} spacing={4}>
               <ChakraLink
                 as={ReactRouterLink}
+                fontSize="14px"
                 to="/"
                 px={2}
                 py={1}
@@ -162,16 +163,16 @@ export default function NavMenu() {
               >
                 Home
               </ChakraLink>
-              <ChakraLink
+              {/* <ChakraLink
                 as={ReactRouterLink}
                 to="/about"
                 px={2}
                 py={1}
                 rounded={"md"}
               >
-                About Me
-              </ChakraLink>
-              <ChakraLink
+                About
+              </ChakraLink> */}
+              {/* <ChakraLink
                 as={ScrollLink}
                 to="project-section"
                 smooth="true"
@@ -181,8 +182,8 @@ export default function NavMenu() {
                 py={1}
                 rounded={"md"}
               >
-                Projects
-              </ChakraLink>
+                Features
+              </ChakraLink> */}
               <NavLink>Contact</NavLink>
             </Stack>
           </Box>
