@@ -22,6 +22,7 @@ const NavLink = ({ children }) => (
   <Link
     px={2}
     py={1}
+    fontSize={["14px"]}
     rounded={"md"}
     _hover={{
       textDecoration: "none",
@@ -85,15 +86,16 @@ export default function NavMenu() {
             >
               <ChakraLink
                 as={ReactRouterLink}
+                fontSize={["14px"]}
                 to="/"
                 _activeLink={{
-                  bg: "PrimaryColor.400",
+                  // bg: "PrimaryColor.400",
                   color: "TextColor.800",
-                  fontWeight: "medium",
+                  fontWeight: "small",
                 }}
                 _hover={{
                   textDecoration: "none",
-                  bg: useColorModeValue("TextColor.50", "gray.500"),
+                  bg: useColorModeValue("BgColor.100", "TextColor.900"),
                 }}
                 px={2}
                 py={1}
@@ -101,37 +103,47 @@ export default function NavMenu() {
               >
                 Home
               </ChakraLink>
-              <ChakraLink
+              {/* <ChakraLink
                 as={ReactRouterLink}
+                fontSize={["14px"]}
                 to="/about"
                 _hover={{
                   textDecoration: "none",
-                  bg: useColorModeValue("PrimaryColor.400", "gray.900"),
+                  bg: useColorModeValue("BgColor.100", "TextColor.900"),
                 }}
                 px={2}
                 py={1}
                 rounded={"md"}
               >
                 About
-              </ChakraLink>
-              <ChakraLink
+              </ChakraLink> */}
+              {/* <ChakraLink
                 as={ScrollLink}
+                fontSize={["14px"]}
                 to="#"
                 smooth="true"
                 duration={800}
                 cursor="pointer"
                 _hover={{
                   textDecoration: "none",
-                  bg: useColorModeValue("PrimaryColor.400", "gray.900"),
+                  bg: useColorModeValue("BgColor.100", "TextColor.900"),
                 }}
                 px={2}
                 py={1}
                 rounded={"md"}
               >
                 Features
-              </ChakraLink>
+              </ChakraLink> */}
               <NavLink>Contact</NavLink>
-              <Button backgroundColor="PrimaryColor.600" color="#ffffff">
+              <Button
+                backgroundColor="PrimaryColor.500"
+                color="#ffffff"
+                fontWeight={[400]}
+                _hover={{
+                  textDecoration: "none",
+                  bg: useColorModeValue("PrimaryColor.800", "NeutralColor.100"),
+                }}
+              >
                 Join Waitlist
               </Button>
             </HStack>

@@ -24,6 +24,10 @@ function Partners() {
           {" "}
           <img src={Sterling} alt="sterlingIcon" width={["200px"]} />
         </Box>
+        <Box>
+          {" "}
+          <img src={Sterling} alt="sterlingIcon" width={["200px"]} />
+        </Box>
       </Flex>
     </Container>
   );

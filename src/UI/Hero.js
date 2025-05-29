@@ -1,10 +1,29 @@
 import React from "react";
-import { Box, Heading, Text, Button, Input, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  Button,
+  Input,
+  Flex,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import TenantlyMobile from "../Assets/img/TENANTLYMOBILE.png";
 import bgSplash from "../Assets/img/colorbg.png";
 import TypingTextRotator from "../Utils/Typer";
+import { keyframes } from "@emotion/react"; // ✅ Correct import
 
+const bounce = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+`;
 function Hero() {
+  const bounceAnimation = `${bounce} 4s ease-in-out infinite`;
+
   return (
     <Box
       height="130vh"
@@ -63,12 +82,25 @@ function Hero() {
           mr="10px"
           backgroundColor="NeutralColor.0"
         />
-        <Button backgroundColor="PrimaryColor.500" color="NeutralColor.0" p={8}>
+        <Button
+          backgroundColor="PrimaryColor.500"
+          color="NeutralColor.0"
+          p={8}
+          _hover={{
+            textDecoration: "none",
+            bg: useColorModeValue("PrimaryColor.800", "NeutralColor.100"),
+          }}
+        >
           Join Waitlist
         </Button>
       </Box>
 
-      <Flex justifyContent="center" alignItems="center" mt="72px">
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        mt="72px"
+        animation={bounceAnimation}
+      >
         <img src={TenantlyMobile} alt="TenantlyMobile" width="900px" />
       </Flex>
     </Box>

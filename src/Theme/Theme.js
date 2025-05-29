@@ -31,7 +31,8 @@ const Theme = extendTheme({
     BgColor: {
       0: "#FFFFFF",
       50: "#F9F9F9",
-      100: "#141414",
+      100: "#EAEAEA",
+      200: "#141414",
     },
 
     NeutralColor: {
