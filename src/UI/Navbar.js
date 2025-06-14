@@ -62,14 +62,14 @@ export default function NavMenu() {
           justifyContent={"space-between"}
           color="gray.600"
         >
-          <IconButton
+          {/* <IconButton
             // px={10}
             size={"sm"}
             icon={isOpen ? <CloseButton /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
-          />
+          /> */}
 
           <Flex direction={["column", "column", "row"]}>
             <ChakraLink as={ReactRouterLink} to="/" textDecoration="none">
@@ -148,6 +148,14 @@ export default function NavMenu() {
               </Button>
             </HStack>
           </HStack>
+          <IconButton
+            // px={10}
+            size={"sm"}
+            icon={isOpen ? <CloseButton /> : <HamburgerIcon />}
+            aria-label={"Open Menu"}
+            display={{ md: "none" }}
+            onClick={isOpen ? onClose : onOpen}
+          />
         </Flex>
 
         {isOpen ? (

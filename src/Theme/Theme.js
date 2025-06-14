@@ -56,8 +56,8 @@ const Theme = extendTheme({
   },
 
   fonts: {
-    heading: "open sans",
-    body: "inter",
+    heading: "Plus Jakarta Sans",
+    body: "open sans",
   },
 });
 

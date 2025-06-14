@@ -6,10 +6,10 @@ import {
   Button,
   Input,
   Flex,
-  useColorModeValue,
+  // useColorModeValue,
 } from "@chakra-ui/react";
 import TenantlyMobile from "../Assets/img/TENANTLYMOBILE.png";
-import bgSplash from "../Assets/img/colorbg.png";
+// import bgSplash from "../Assets/img/colorbg.png";
 import TypingTextRotator from "../Utils/Typer";
 import { keyframes } from "@emotion/react"; // ✅ Correct import
 
@@ -26,18 +26,21 @@ function Hero() {
 
   return (
     <Box
-      height={["130vh"]}
-      backgroundImage={`url(${bgSplash})`}
-      backgroundSize="cover"
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
+      // height={["130vh"]}
+      // backgroundImage={`url(${bgSplash})`}
+      // backgroundSize="cover"
+      // backgroundPosition="center"
+      // backgroundRepeat="no-repeat"
+      pt={["40px", "80px", "80px"]}
+      // backgroundColor="#f1f4f8"
+      backgroundColor="#f9f9f9"
     >
       <Box
         textAlign="center"
         backgroundColor="BgColor.50"
         width={["230px", "300px", "300px"]}
         mx="auto"
-        mt="80px"
+        // mt="80px"
         borderRadius="50px"
         border="1px solid #141441"
         mb={8}
@@ -48,17 +51,18 @@ function Hero() {
       </Box>
 
       <Heading
-        pb="130px"
-        color="TextColor.600"
+        pb={["140px", "160px", "140px"]}
+        color=" #122231"
+        // color="TextColor.600"
         textAlign="center"
-        fontSize={["2xl", "3xl", "5xl"]}
+        fontSize={["32px", "48px", "54px"]}
         fontWeight="semibold"
         height={["120px", "0px", "0px"]}
       >
         <TypingTextRotator
           texts={["Monthly", "Quarterly", "Annually"]}
-          fontSize={["2xl", "3xl", "5xl"]}
-          fontWeight="semibold"
+          fontSize={["32px", "48px", "54px"]}
+          fontWeight="bold"
           color="PrimaryColor.600"
           textAlign="center"
         />
@@ -97,7 +101,8 @@ function Hero() {
           width={["300px", "150px", "150px"]}
           _hover={{
             textDecoration: "none",
-            bg: useColorModeValue("PrimaryColor.800", "NeutralColor.100"),
+            // bg: useColorModeValue("PrimaryColor.800", "NeutralColor.100"),
+            borderRadius: "50px",
           }}
         >
           Join Waitlist
