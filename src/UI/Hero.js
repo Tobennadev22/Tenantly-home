@@ -35,92 +35,95 @@ function Hero() {
       // backgroundColor="#f1f4f8"
       backgroundColor="#f9f9f9"
     >
-      <Box
-        textAlign="center"
-        backgroundColor="BgColor.50"
-        width={["230px", "300px", "300px"]}
-        mx="auto"
-        // mt="80px"
-        borderRadius="50px"
-        border="1px solid #141441"
-        mb={8}
-      >
-        <Text fontSize={["12px", "14px", "14px"]} p={2}>
-          Finding shelter shouldn't be a hassle!
-        </Text>
-      </Box>
-
-      <Heading
-        pb={["140px", "160px", "140px"]}
-        color=" #122231"
-        // color="TextColor.600"
-        textAlign="center"
-        fontSize={["32px", "48px", "54px"]}
-        fontWeight="semibold"
-        height={["120px", "0px", "0px"]}
-      >
-        <TypingTextRotator
-          texts={["Monthly", "Quarterly", "Annually"]}
-          fontSize={["32px", "48px", "54px"]}
-          fontWeight="bold"
-          color="PrimaryColor.600"
+      <Box>
+        <Box
           textAlign="center"
-        />
-        Rentals Made Simple
-        <br />
-        <Text as="span" color="TextColor.300">
-          <em>- No Middlemen</em>
-        </Text>
-      </Heading>
-
-      <Text
-        textAlign="center"
-        fontSize={["14px", "16px", "18px"]}
-        color="TextColor.400"
-        width={["250px", "100%", "100%"]}
-        mx="auto"
-      >
-        Rent an apartment, share, or rent a space you own <br />
-        and make extra cash at ease.
-      </Text>
-
-      <Box textAlign="center" my={8}>
-        <Input
-          placeholder="Enter your email"
-          focusBorderColor="bgColor.100"
-          width={["300px", "300px", "400px"]}
-          p={[6, 8, 8]}
-          mr={["0", "10px", "10px"]}
-          backgroundColor="NeutralColor.0"
-          mb={[4, 0, 0]}
-        />
-        <Button
-          backgroundColor="PrimaryColor.500"
-          color="NeutralColor.0"
-          p={[6, 6, 8]}
-          width={["300px", "150px", "150px"]}
-          _hover={{
-            textDecoration: "none",
-            // bg: useColorModeValue("PrimaryColor.800", "NeutralColor.100"),
-            borderRadius: "50px",
-          }}
+          backgroundColor="BgColor.50"
+          width={["230px", "300px", "300px"]}
+          mx="auto"
+          // mt="80px"
+          borderRadius="50px"
+          border="1px solid #141441"
+          mb={8}
         >
-          Join Waitlist
-        </Button>
-      </Box>
+          <Text fontSize={["12px", "14px", "14px"]} p={2}>
+            Finding shelter shouldn't be a hassle!
+          </Text>
+        </Box>
 
-      <Flex
-        justifyContent="center"
-        alignItems="center"
-        mt="72px"
-        animation={bounceAnimation}
-      >
-        <img
-          src={TenantlyMobile}
-          alt="TenantlyMobile"
-          width={["900px", "900px", "100%"]}
-        />
-      </Flex>
+        <Heading
+          pb={["140px", "160px", "140px"]}
+          color=" #122231"
+          // color="TextColor.600"
+          textAlign="center"
+          fontSize={["32px", "48px", "54px"]}
+          fontWeight="semibold"
+          height={["120px", "0px", "0px"]}
+        >
+          <TypingTextRotator
+            texts={["Monthly", "Quarterly", "Annually"]}
+            fontSize={["32px", "48px", "54px"]}
+            fontWeight="bold"
+            color="PrimaryColor.600"
+            textAlign="center"
+          />
+          Rentals Made Simple
+          <br />
+          <Text as="span" color="TextColor.300">
+            <em>- No Middlemen</em>
+          </Text>
+        </Heading>
+
+        <Text
+          textAlign="center"
+          fontSize={["14px", "16px", "18px"]}
+          color="TextColor.400"
+          width={["250px", "100%", "100%"]}
+          mx="auto"
+        >
+          Rent an apartment, share, or rent a space you own <br />
+          and make extra cash at ease.
+        </Text>
+
+        <Box textAlign="center" my={8}>
+          <Input
+            placeholder="Enter your email"
+            focusBorderColor="bgColor.100"
+            width={["300px", "300px", "400px"]}
+            p={[6, 8, 8]}
+            mr={["0", "10px", "10px"]}
+            backgroundColor="NeutralColor.0"
+            mb={[4, 0, 0]}
+          />
+          <Button
+            backgroundColor="PrimaryColor.500"
+            color="NeutralColor.0"
+            p={[6, 6, 8]}
+            width={["300px", "150px", "150px"]}
+            _hover={{
+              textDecoration: "none",
+              // bg: useColorModeValue("PrimaryColor.800", "NeutralColor.100"),
+              borderRadius: "50px",
+            }}
+          >
+            Join Waitlist
+          </Button>
+        </Box>
+      </Box>
+      <Box>
+        <Flex
+          justifyContent="center"
+          alignItems="center"
+          mt="72px"
+          animation={bounceAnimation}
+        >
+          <img
+            src={TenantlyMobile}
+            alt="TenantlyMobile"
+            width={["900px", "900px", "100%"]}
+          />
+        </Flex>
+      </Box>
     </Box>
   );
 }
