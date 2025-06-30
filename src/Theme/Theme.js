@@ -41,7 +41,7 @@ const Theme = extendTheme({
       100: "#141414",
     },
 
-    SeconadryColor: {
+    SecondaryColor: {
       50: "#fffff8",
       100: "#fffeeb",
       200: "#fffde1",
@@ -57,7 +57,7 @@ const Theme = extendTheme({
 
   fonts: {
     heading: "Plus Jakarta Sans",
-    body: "open sans",
+    body: "Plus Jakarta Sans",
   },
 });
 

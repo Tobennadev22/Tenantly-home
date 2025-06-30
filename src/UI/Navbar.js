@@ -46,8 +46,8 @@ export default function NavMenu() {
       borderBottom="1px solid #ddd"
       top="0px"
       zIndex="1000"
-      p={2}
-      px={10}
+      // p={2}
+      // px={10}
       //   boxShadow="md"
       blur={10}
       opacity={[0.9]}
@@ -55,11 +55,12 @@ export default function NavMenu() {
       //   borderRadius={["50px"]}
       mx="auto"
     >
-      <Container maxW={["container.sm", "container.lg"]}>
+      <Container maxW={["container.sm", "container.md", "container.lg"]}>
         <Flex
           h={16}
           alignItems={"center"}
           justifyContent={"space-between"}
+          gap={8}
           color="gray.600"
         >
           {/* <IconButton
@@ -77,7 +78,7 @@ export default function NavMenu() {
               <img src={Logo} alt="TenantlyLogo" width="120px" />
             </ChakraLink>
           </Flex>
-          <HStack spacing={8} alignItems={"center"} justifyContent={"center"}>
+          <HStack spacing={8} align={"center"}>
             <HStack
               as={"nav"}
               spacing={4}
@@ -102,6 +103,44 @@ export default function NavMenu() {
                 rounded={"md"}
               >
                 Home
+              </ChakraLink>
+              <ChakraLink
+                as={ReactRouterLink}
+                fontSize={["14px"]}
+                to="/whyus"
+                _activeLink={{
+                  // bg: "PrimaryColor.400",
+                  color: "TextColor.800",
+                  fontWeight: "small",
+                }}
+                _hover={{
+                  textDecoration: "none",
+                  bg: useColorModeValue("BgColor.100", "TextColor.900"),
+                }}
+                px={2}
+                py={1}
+                rounded={"md"}
+              >
+                Why Us
+              </ChakraLink>
+              <ChakraLink
+                as={ReactRouterLink}
+                fontSize={["14px"]}
+                to="/features"
+                _activeLink={{
+                  // bg: "PrimaryColor.400",
+                  color: "TextColor.800",
+                  fontWeight: "small",
+                }}
+                _hover={{
+                  textDecoration: "none",
+                  bg: useColorModeValue("BgColor.100", "TextColor.900"),
+                }}
+                px={2}
+                py={1}
+                rounded={"md"}
+              >
+                features
               </ChakraLink>
               {/* <ChakraLink
                 as={ReactRouterLink}

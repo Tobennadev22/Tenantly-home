@@ -10,8 +10,12 @@ import {
 } from "@chakra-ui/react";
 import TenantlyMobile from "../Assets/img/TENANTLYMOBILE.png";
 // import bgSplash from "../Assets/img/colorbg.png";
+// import bgnet from "../Assets/img/bgnet.png";
 import TypingTextRotator from "../Utils/Typer";
 import { keyframes } from "@emotion/react"; // ✅ Correct import
+// import star from "../Assets/img/star.jpg";
+// import Tenant1 from "../Assets/img/Frame 34.png";
+// import Tenant2 from "../Assets/img/Frame 35.png";
 
 const bounce = keyframes`
   0%, 100% {
@@ -27,18 +31,53 @@ function Hero() {
   return (
     <Box
       // height={["130vh"]}
-      // backgroundImage={`url(${bgSplash})`}
-      // backgroundSize="cover"
-      // backgroundPosition="center"
-      // backgroundRepeat="no-repeat"
+      // backgroundImage={`url(${bgnet})`}
+      backgroundSize="cover"
+      backgroundPosition="center"
+      backgroundRepeat="no-repeat"
       pt={["40px", "80px", "80px"]}
-      // backgroundColor="#f1f4f8"
-      backgroundColor="#f9f9f9"
+      backgroundColor="#ffffff"
+      // backgroundColor="#f9f9f9"
+      position="relative"
     >
       <Box>
+        {/* <Box
+          position="absolute"
+          top="200px"
+          left="200px"
+          bg="#8409e4"
+          color="white"
+          p="2"
+          borderRadius="lg"
+          animation={bounceAnimation}
+        >
+          <img
+            src={Tenant1}
+            alt="A tenant on tenantly"
+            display={["none", "block", "block"]}
+            width={["24px", "48px", "70px"]}
+          />
+        </Box> */}
+
+        {/* <Box
+          position="absolute"
+          top="400px"
+          right="200px"
+          bg="#5063f6"
+          color="white"
+          p="2"
+          borderRadius="lg"
+          animation={bounceAnimation}
+        >
+          <img
+            src={Tenant2}
+            alt="A tenant on tenantly"
+            width={["none", "48px", "70px"]}
+          />
+        </Box> */}
         <Box
           textAlign="center"
-          backgroundColor="BgColor.50"
+          backgroundColor="SecondaryColor.100"
           width={["230px", "300px", "300px"]}
           mx="auto"
           // mt="80px"
@@ -46,6 +85,7 @@ function Hero() {
           border="1px solid #141441"
           mb={8}
         >
+          {/* <img src={star} as="span" alt="star" width={["24px"]} /> */}
           <Text fontSize={["12px", "14px", "14px"]} p={2}>
             Finding shelter shouldn't be a hassle!
           </Text>
